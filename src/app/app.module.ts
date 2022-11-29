@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PassengerDataComponent } from './passenger-data/passenger-data.component';
 import { PublicDataComponent } from './public-data/public-data.component';
 import { PublicApiComponent } from './public-api/public-api.component';
+import { UserinfoComponent } from './userinfo/userinfo.component';
 
 
 
@@ -15,7 +16,8 @@ import { PublicApiComponent } from './public-api/public-api.component';
     AppComponent,
     PassengerDataComponent,
     PublicDataComponent,
-    PublicApiComponent
+    PublicApiComponent,
+    UserinfoComponent
   ],
   imports: [
     BrowserModule,
