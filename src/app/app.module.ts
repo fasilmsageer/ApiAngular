@@ -9,6 +9,7 @@ import { PublicDataComponent } from './public-data/public-data.component';
 import { PublicApiComponent } from './public-api/public-api.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductsComponent } from './products/products.component';
+import { UserdataComponent } from './userdata/userdata.component';
 
 const myRoute=[
   {
@@ -30,7 +31,11 @@ const myRoute=[
   {
     path:"userinfo",
     component:UserinfoComponent
-  }
+  },
+  {
+    path:"userdata",
+    component:UserdataComponent
+  },
 
 ]
 
@@ -43,7 +48,8 @@ const myRoute=[
     PublicDataComponent,
     PublicApiComponent,
     UserinfoComponent,
-    ProductsComponent
+    ProductsComponent,
+    UserdataComponent
   ],
   imports: [
     BrowserModule,

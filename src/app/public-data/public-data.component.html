@@ -19,12 +19,12 @@
                         </thead>
                         <tbody>
                           <tr *ngFor ="let i of public.data">
-                            <th scope="row">{{i.ID_Nation}}</th>
+                            <th scope="row">{{i['ID Nation']}}</th>
                             <td>{{i.Nation}}</td>
                             <td>{{i['ID Year']}}</td>
                             <td>{{i.Year}}</td>
                             <td>{{i.Population}}</td>
-                            <td>{{i.Slug_Nation}}</td>
+                            <td>{{i['Slug Nation']}}</td>
                           </tr>
                         </tbody> 
                      </table>
