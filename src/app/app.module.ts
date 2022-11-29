@@ -8,6 +8,31 @@ import { PassengerDataComponent } from './passenger-data/passenger-data.componen
 import { PublicDataComponent } from './public-data/public-data.component';
 import { PublicApiComponent } from './public-api/public-api.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
+import { ProductsComponent } from './products/products.component';
+
+const myRoute=[
+  {
+    path:"",
+    component:PassengerDataComponent
+  },
+  {
+    path:"products",
+    component:ProductsComponent
+  },
+  {
+    path:"publicapi",
+    component:PublicApiComponent
+  },
+  {
+    path:"publicdata",
+    component:PublicDataComponent
+  },
+  {
+    path:"userinfo",
+    component:UserinfoComponent
+  }
+
+]
 
 
 
@@ -17,11 +42,13 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
     PassengerDataComponent,
     PublicDataComponent,
     PublicApiComponent,
-    UserinfoComponent
+    UserinfoComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
     
   ],
   providers: [],
