@@ -3,24 +3,24 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h2>Passenger Data</h2>
+                    <h2>Quotes</h2>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Trips</th>
-                            <th scope="col">Airline</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">id</th>
+                            <th scope="col">quote</th>
+                            <th scope="col">author</th>
+                            
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor ="let i of passengerdata.data">
-                            <th scope="row">{{i.name}}</th>
-                            <td>{{i.trips}}</td>
-                            <td>{{i.airline}}</td>
-                            <td>{{i.name}}</td>
+                          <tr *ngFor ="let i of data.quotes">
+                            <th scope="row">{{i.id}}</th>
+                            <td>{{i.quote}}</td>
+                            <td>{{i.author}}</td>
+                            
                           </tr>
                         </tbody> 
                      </table>

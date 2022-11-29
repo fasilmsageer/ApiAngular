@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-userdata',
-  templateUrl: './userdata.component.html',
-  styleUrls: ['./userdata.component.css']
+  selector: 'app-todo',
+  templateUrl: './todo.component.html',
+  styleUrls: ['./todo.component.css']
 })
-export class UserdataComponent {
-
+export class TodoComponent {
   constructor(private api:ApiService){
-    api.fetchUserdata().subscribe(
+    api.fetchtodo().subscribe(
       (response)=>{
         this.data=response;
       }
@@ -17,5 +16,6 @@ export class UserdataComponent {
   }
 
   data:any=[]
+
 
 }

@@ -10,6 +10,9 @@ import { PublicApiComponent } from './public-api/public-api.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductsComponent } from './products/products.component';
 import { UserdataComponent } from './userdata/userdata.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TodoComponent } from './todo/todo.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 const myRoute=[
   {
@@ -36,6 +39,14 @@ const myRoute=[
     path:"userdata",
     component:UserdataComponent
   },
+  {
+    path:"todo",
+    component:TodoComponent
+  },
+  {
+    path:"quotes",
+    component:QuotesComponent
+  }
 
 ]
 
@@ -49,12 +60,15 @@ const myRoute=[
     PublicApiComponent,
     UserinfoComponent,
     ProductsComponent,
-    UserdataComponent
+    UserdataComponent,
+    TodoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
     
   ],
   providers: [],
