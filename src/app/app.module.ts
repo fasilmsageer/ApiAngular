@@ -13,6 +13,7 @@ import { UserdataComponent } from './userdata/userdata.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute=[
   {
@@ -62,7 +63,8 @@ const myRoute=[
     ProductsComponent,
     UserdataComponent,
     TodoComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
